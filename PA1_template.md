@@ -107,13 +107,14 @@ Time series plot and maximum interval report shown in the next code chunk.
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
+
 ```r
         best_interval<-subset(interval_steps, mean == max(mean))
-        textplot(best_interval, show.rownames=FALSE, cex=.8, pin=2)
-        title("Interval with Maximum Steps")
+        textplot(best_interval, show.rownames=FALSE)
+        title("Interval with Max Steps")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-2.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 
 Imputing missing values
@@ -190,7 +191,7 @@ The subsequent table also shows differences for the overall mean and mod once in
         legend("topright", title="Steps Distribution" , c("Raw", "Modified"), fill=c("red", "green"))
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 
 ```r
@@ -198,7 +199,7 @@ The subsequent table also shows differences for the overall mean and mod once in
         title("Mean and Median Steps per Day - Modified" )
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
 
 
 Are there differences in activity patterns between weekdays and weekends?
@@ -254,4 +255,4 @@ The code below builds the additional column "days" and substitutes weekday and w
              ))
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
+![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 

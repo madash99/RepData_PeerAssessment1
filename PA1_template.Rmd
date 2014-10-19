@@ -94,10 +94,13 @@ Time series plot and maximum interval report shown in the next code chunk.
                  ylab="5 Minute Interval",
                  xlab="Average Steps"
              ))
+```
+
+``` {r fig.width=3, fig.height=3 }
 
         best_interval<-subset(interval_steps, mean == max(mean))
-        textplot(best_interval, show.rownames=FALSE, cex=.8, pin=2)
-        title("Interval with Maximum Steps")
+        textplot(best_interval, show.rownames=FALSE)
+        title("Interval with Max Steps")
 
 ```
 
