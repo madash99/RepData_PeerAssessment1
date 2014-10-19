@@ -196,7 +196,7 @@ The subsequent table also shows differences for the overall mean and mod once in
 
 ```r
         textplot(mod_aggregate_steps, show.rownames=FALSE)
-        title("Mean and Median Steps per Day - Modified" )
+        title("Mean and Median Steps per Day - Modified")
 ```
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
